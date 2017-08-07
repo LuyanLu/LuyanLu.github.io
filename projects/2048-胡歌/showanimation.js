@@ -11,12 +11,12 @@ function show_number_with_animation(i, j, rand_number) {
 	}, 50);
 }
  
-//¸üÐÂ·ÖÊý
+//ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½
 function update_score(score) {
 	$('#score').text(score);
 }
-//ÔÚshowanimation.jsÖÐ¼ÓÈë
-//¸ñ×ÓÒÆ¶¯Ê±ÓÐ¶¯»­Ð§¹û
+//ï¿½ï¿½showanimation.jsï¿½Ð¼ï¿½ï¿½ï¿½
+//ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½Ê±ï¿½Ð¶ï¿½ï¿½ï¿½Ð§ï¿½ï¿½
 function show_move_animation(fromx, fromy, tox, toy) {
 	var number_cell = $('#number_cell_' + fromx + '_' + fromy);
 	number_cell.animate({
