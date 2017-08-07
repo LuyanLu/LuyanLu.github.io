@@ -1,19 +1,19 @@
-document_width = window.screen.availWidth;  //ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½
-grid_container_width = 0.92 * document_width;   //ï¿½ï¿½ï¿½Ì¿ï¿½ï¿½ï¿½
-cell_side_length = 0.18 * document_width;   //ï¿½ï¿½ï¿½ÓµÄ´ï¿½Ð¡
-cell_space = 0.04 * document_width; //ï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½
+document_width = window.screen.availWidth;  //ÆÁÄ»¿í¶È
+grid_container_width = 0.92 * document_width;   //ÆÚÅÌ¿í¶È
+cell_side_length = 0.18 * document_width;   //¸ñ×ÓµÄ´óÐ¡
+cell_space = 0.04 * document_width; //¸ñ×ÓÖ®¼äµÄ¼ä¸ô
  
-//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½Ó¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì¶ï¿½ï¿½ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½
+//»ñµÃÏàÓ¦¸ñ×Ó¾àÀëÆÚÅÌ¶¥²¿µÄ¾àÀë
 function get_pos_top(i, j) {
 	return cell_space + i * (cell_space + cell_side_length);
 }
  
-//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½Ó¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßµÄ¾ï¿½ï¿½ï¿½
+//»ñµÃÏàÓ¦¸ñ×Ó¾àÀëÆåÅÌ×ó±ßµÄ¾àÀë
 function get_pos_left(i, j) {
 	return cell_space + j * (cell_space + cell_side_length);
 }
  
-//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ÖµÄ±ï¿½ï¿½ï¿½É«
+//»ñµÃÏàÓ¦Êý×ÖµÄ±³¾°É«
 function get_number_background_color(number) {
 	switch (number) {
 		case 2: return '#eee4da'; break;
@@ -33,9 +33,43 @@ function get_number_background_color(number) {
 	return 'black';
 }
  
-//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½É«
+//»ñµÃÏàÓ¦Êý×ÖµÄÑÕÉ«
 function get_number_color(number) {
-	if (number <= 0="" 4)="" return="" '#776e65';="" 'white';="" }="" ï¿½Ð¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¿ï¿½ï¿½ï¿½ï¿½Ð¿Õ¸ï¿½ï¿½ï¿½="" function="" nospace(board)="" {="" for="" (var="" i="0;" <="" 4;="" i++)="" j="0;" j++)="" if="" (board[i][j]="=" 0)="" false;="" true;="" ï¿½ï¿½support.jsï¿½Ð¼ï¿½ï¿½ï¿½="" ï¿½Ð¶ï¿½ï¿½Æ¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½="" can_move_left(board)="" !="0)" (board[i][j="" -="" 1]="=" ||="" board[i][j]="=" board[i][j="" 1])="" can_move_right(board)="">= 0; j--) {
+	if (number <= 4)
+		return '#776e65';
+	return 'white';
+}
+ 
+//ÅÐ¶ÏÆåÅÌÉÏÊÇ·ñ»¹ÓÐ¿Õ¸ñ×Ó
+function nospace(board) {
+	for (var i = 0; i < 4; i++) {
+		for (var j = 0; j < 4; j++) {
+			if (board[i][j] == 0) {
+				return false;
+			}
+		}
+	}
+	return true;
+}
+//ÔÚsupport.jsÖÐ¼ÓÈë
+//ÅÐ¶ÏÊÇ·ñÄÜÏò×óÒÆ¶¯
+function can_move_left(board) {
+	for (var i = 0; i < 4; i++) {
+		for (var j = 1; j < 4; j++) {
+			if (board[i][j] != 0) {
+				if (board[i][j - 1] == 0 || board[i][j] == board[i][j - 1]) {
+					return true;
+				}
+			}
+		}
+	}
+	return false;
+}
+ 
+//ÅÐ¶ÏÊÇ·ñÄÜÏòÓÒÒÆ¶¯
+function can_move_right(board) {
+	for (var i = 0; i < 4; i++) {
+		for (var j = 2; j >= 0; j--) {
 			if (board[i][j] != 0) {
 				if (board[i][j + 1] == 0 || board[i][j] == board[i][j + 1]) {
 					return true;
@@ -46,7 +80,7 @@ function get_number_color(number) {
 	return false;
 }
  
-//ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½
+//ÅÐ¶ÏÊÇ·ñÄÜÏòÉÏÒÆ¶¯
 function can_move_up(board) {
 	for (var j = 0; j < 4; j++) {
 		for (var i = 1; i < 4; i++) {
@@ -60,7 +94,7 @@ function can_move_up(board) {
 	return false;
 }
  
-//ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½
+//ÅÐ¶ÏÊÇ·ñÄÜÏòÏÂÒÆ¶¯
 function can_move_down(board) {
 	for (var j = 0; j < 4; j++) {
 		for (var i = 2; i >= 0; i--) {
@@ -74,7 +108,7 @@ function can_move_down(board) {
 	return false;
 }
  
-//ï¿½Ð¶ï¿½Ë®Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Ç·ï¿½ï¿½Ð¿Õ¸ï¿½ï¿½ï¿½
+//ÅÐ¶ÏË®Æ½·½ÏòÉÏÊ±ºòÊÇ·ñÓÐ¿Õ¸ñ×Ó
 function no_block_horizontal(row, col1, col2, board) {
 	for (var i = col1 + 1; i < col2; i++) {
 		if (board[row][i] != 0) {
@@ -84,7 +118,7 @@ function no_block_horizontal(row, col1, col2, board) {
 	return true;
 }
  
-//ï¿½Ð¶Ï´ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Ç·ï¿½ï¿½Ð¿Õ¸ï¿½ï¿½ï¿½
+//ÅÐ¶Ï´¹Ö±·½ÏòÉÏÊ±ºòÊÇ·ñÓÐ¿Õ¸ñ×Ó
 function no_block_vertical(col, row1, row2, board) {
 	for (var i = row1 + 1; i < row2; i++) {
 		if (board[i][col] != 0) {
@@ -94,10 +128,10 @@ function no_block_vertical(col, row1, row2, board) {
 	return true;
 }
  
-//ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½
+//ÅÐ¶ÏÊÇ·ñ»¹ÄÜÒÆ¶¯
 function nomove(board) {
 	if (can_move_down(board) || can_move_up(board) || can_move_right(board) || can_move_left(board)) {
 		return false;
 	}
 	return true;
-}</=>
+}
