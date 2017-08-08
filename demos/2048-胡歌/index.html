@@ -7,7 +7,7 @@
     
 
     <title>
-      2048-胡歌 
+       
     </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,13 +16,16 @@
     
     
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="2048-胡歌">
-<meta property="og:url" content="http://yoursite.com/2048-胡歌/index.html">
+    <meta name="description" content="shiyanlou-2048 	 	 	 	 	   	 		2048-JS 		New Game 		score: 0">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/demos/2048-胡歌/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:updated_time" content="2017-08-07T15:45:23.788Z">
+<meta property="og:description" content="shiyanlou-2048 	 	 	 	 	   	 		2048-JS 		New Game 		score: 0">
+<meta property="og:updated_time" content="2017-04-20T09:43:22.169Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2048-胡歌">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="shiyanlou-2048 	 	 	 	 	   	 		2048-JS 		New Game 		score: 0">
     
     
     
@@ -72,7 +75,7 @@
                 <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
               
                 
-                <li class="navigation__item"><a href="/archive" title="" class="">归档</a></li>
+                <li class="navigation__item"><a href="/demos" title="" class="">Demos</a></li>
               
 
             </ul>
@@ -146,14 +149,54 @@ classes that you can use:
 
   <header class="post-header">
     
-    <h1 class="post-title">2048-胡歌</h1>
+    <h1 class="post-title"></h1>
 
     
 
   </header>
 
   <section id="post-content" class="article-content post">
-    
+    <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>shiyanlou-2048</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="http://libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="showanimation.js"></script>
+	<script type="text/javascript" src="support.js"></script>
+</head>
+<body>
+	<header>
+		<h1>2048-JS</h1>
+		<a href="javascript:new_game();" id="new_game_button" target="_blank" rel="external">New Game</a>
+		<p>score: <span id="score">0</span></p>
+	</header>
+	<div id="grid_container">
+		<div class="grid_cell" id="grid_cell_0_0"></div>
+		<div class="grid_cell" id="grid_cell_0_1"></div>
+		<div class="grid_cell" id="grid_cell_0_2"></div>
+		<div class="grid_cell" id="grid_cell_0_3"></div>
+ 
+		<div class="grid_cell" id="grid_cell_1_0"></div>
+		<div class="grid_cell" id="grid_cell_1_1"></div>
+		<div class="grid_cell" id="grid_cell_1_2"></div>
+		<div class="grid_cell" id="grid_cell_1_3"></div>
+ 
+		<div class="grid_cell" id="grid_cell_2_0"></div>
+		<div class="grid_cell" id="grid_cell_2_1"></div>
+		<div class="grid_cell" id="grid_cell_2_2"></div>
+		<div class="grid_cell" id="grid_cell_2_3"></div>
+ 
+		<div class="grid_cell" id="grid_cell_3_0"></div>
+		<div class="grid_cell" id="grid_cell_3_1"></div>
+		<div class="grid_cell" id="grid_cell_3_2"></div>
+		<div class="grid_cell" id="grid_cell_3_3"></div>
+	</div>
+</body>
+</html>
   </section>
 
   <section class="post-comments">
