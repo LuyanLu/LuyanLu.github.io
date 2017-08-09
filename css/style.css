@@ -35,7 +35,6 @@ body {
 	line-height: 1;
 	font-family: "微软雅黑",'Microsoft JhengHei',Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif;
 	font-size: 18px;
-	background: url("../background/yellow.png") repeat;
 	color: #666;
 	-webkit-overflow-scrolling: touch
 }
