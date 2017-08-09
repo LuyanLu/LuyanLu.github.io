@@ -624,7 +624,7 @@ a {
 }
 
 #header a {
-	color: #001C54
+	color: white;	
 }
 
 #header a:hover {
@@ -1284,7 +1284,7 @@ a {
 
 #header .header-menu li a:hover {
 	color: #fff;
-	background: #258fb8;
+	background: #228fbd;
 	border-radius: 2px;
 	padding: 3px;
 	margin: 2px
@@ -1528,7 +1528,7 @@ a {
 }
 
 .scroll a:hover {
-	background: rgba(147,181,224,.3)!important
+	background: rgba(0, 120, 255,.3)!important
 }
 
 .scroll a:hover .fa {
@@ -1698,7 +1698,7 @@ a {
 }
 
 .article-title:hover {
-	color: #fff
+	color: #4bd1e2
 }
 
 .article-inner {
@@ -1861,7 +1861,7 @@ a {
 }
 
 .article-more-link a {
-	background: #258fb8;
+	background: #228fbd;
 	color: #fff;
 	font-size: 12px;
 	padding: 2px 8px 4px;
@@ -2021,7 +2021,7 @@ a {
 	font-size: .93em;
 	line-height: 1.6em;
 	word-break: break-word;
-	background: #414141;
+	background: #222;
 	-webkit-box-shadow: 4px 4px 18px rgba(0,0,0,.46);
 	box-shadow: 4px 4px 18px rgba(0,0,0,.46);
 	border-radius: 6px
@@ -2350,7 +2350,7 @@ a {
 }
 
 .article-entry code {
-	background: #eee;
+	background: #444;
 	padding: 0 .3em;
 	border: none
 }
@@ -2359,7 +2359,7 @@ a {
 	background: 0 0;
 	text-shadow: none;
 	padding: 0;
-	color: #fff
+	color: #444
 }
 
 .article-entry p a,.article-entry p code {
@@ -2371,7 +2371,7 @@ a {
 .article-entry p code {
 	margin: 0 3px;
 	border: 1px dashed #666;
-	color: #fff;
+	color: #444;
 	font-size: 90%;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
@@ -2395,7 +2395,7 @@ a {
 }
 
 .article-entry p a:hover {
-	color: #fff
+	color: #4bd1e2
 }
 
 .article-entry h1 {
@@ -2645,7 +2645,7 @@ pre .title {
 }
 
 pre .strings {
-	color: #2aa198
+	color: #228fbd
 }
 
 pre .attribute {
@@ -2653,7 +2653,7 @@ pre .attribute {
 }
 
 pre .annotation,pre .command,pre .cpp {
-	color: #258fb8
+	color: #228fbd
 }
 
 pre .comment {
@@ -2685,7 +2685,7 @@ pre .css~* .id,pre .id {
 }
 
 pre .code,pre .link_label,pre .link_url,pre .operator {
-	color: #258fb8
+	color: #228fbd
 }
 
 #footer,#footer a:hover {
@@ -2698,7 +2698,7 @@ pre .code,pre .link_label,pre .link_url,pre .operator {
 	position: absolute;
 	bottom: 1px;
 	width: 100%;
-	background: #4a4b4d;
+	background: black;
 	padding: 14px;
 }
 
@@ -2723,7 +2723,7 @@ pre .code,pre .link_label,pre .link_url,pre .operator {
 }
 
 .article-entry pre {
-	color: #ccc
+	color: #444
 }
 
 .article-entry h3 {
@@ -2748,7 +2748,7 @@ pre .code,pre .link_label,pre .link_url,pre .operator {
 }
 
 .bdshare-button-style2-24 .fx:hover {
-	color: #fff;
+	color: #4bd1e2;
 	opacity: 1
 }
 
