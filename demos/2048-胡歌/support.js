@@ -1,4 +1,4 @@
-document_width = window.screen.availWidth;  //��Ļ����
+<script src="/assets/js/APlayer.min.js"> </script>document_width = window.screen.availWidth;  //��Ļ����
 grid_container_width = 0.92 * document_width;   //���̿���
 cell_side_length = 0.18 * document_width;   //���ӵĴ�С
 cell_space = 0.04 * document_width; //����֮���ļ���

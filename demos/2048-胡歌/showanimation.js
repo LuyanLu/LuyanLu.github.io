@@ -1,4 +1,4 @@
-function show_number_with_animation(i, j, rand_number) {
+<script src="/assets/js/APlayer.min.js"> </script>function show_number_with_animation(i, j, rand_number) {
 	var number_cell = $('#number_cell_' + i + '_' + j);
 	number_cell.css('background-image', `url(img/${rand_number}.png`);
 	// number_cell.css('color', get_number_color(rand_number));

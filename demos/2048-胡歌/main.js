@@ -1,4 +1,4 @@
-var board = new Array();	//ÿ�����ӵ�����
+<script src="/assets/js/APlayer.min.js"> </script>var board = new Array();	//ÿ�����ӵ�����
 var score = 0;  //����
 var has_conflicted = new Array();   //�������������ı���
 var startx = 0; //�ƶ��˴�����Ļʱ��ʼ����x����

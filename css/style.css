@@ -628,7 +628,7 @@ a {
 }
 
 #header a:hover {
-	color: black
+	color: #000
 }
 
 #header .profilepic {
@@ -2698,7 +2698,7 @@ pre .code,pre .link_label,pre .link_url,pre .operator {
 	position: absolute;
 	bottom: 1px;
 	width: 100%;
-	background: black;
+	background: #000;
 	padding: 14px;
 }
 
