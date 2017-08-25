@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://samanthalu.site/"/>
-  <updated>2017-08-25T12:18:23.417Z</updated>
+  <updated>2017-08-25T13:20:06.809Z</updated>
   <id>https://samanthalu.site/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
+    <title>Hexo教程</title>
     <link href="https://samanthalu.site/2017/08/25/hello-world/"/>
     <id>https://samanthalu.site/2017/08/25/hello-world/</id>
-    <published>2017-08-25T12:18:23.417Z</published>
-    <updated>2017-08-25T12:18:23.417Z</updated>
+    <published>2017-08-25T13:20:06.807Z</published>
+    <updated>2017-08-25T13:20:06.809Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"> </script><script src="/assets/js/APlayer.min.js"> </script><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
