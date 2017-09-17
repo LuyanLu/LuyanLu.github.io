@@ -2,42 +2,63 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://samanthalu.site/2017/09/17/elemeVue%E7%AC%94%E8%AE%B0/</loc>
+    <loc>http://samanthalu.site/categories/index.html</loc>
+    
+    <lastmod>2017-09-17T11:33:28.609Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://samanthalu.site/tags/index.html</loc>
+    
+    <lastmod>2017-09-17T11:32:02.230Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://samanthalu.site/tags/index-1.html</loc>
+    
+    <lastmod>2017-09-17T11:29:59.214Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://samanthalu.site/2017/09/17/resume-vue%E7%AC%94%E8%AE%B0/</loc>
+    
+    <lastmod>2017-09-17T11:27:06.074Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://samanthalu.site/2017/09/17/elemeVue%E7%AC%94%E8%AE%B0/</loc>
     
     <lastmod>2017-09-17T07:37:15.921Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://samanthalu.site/2017/08/25/Vue%E4%B8%ADsrc%E5%BC%95%E7%94%A8%E8%B5%8B%E5%80%BC%E9%97%AE%E9%A2%98/</loc>
+    <loc>http://samanthalu.site/2017/08/25/Vue%E4%B8%ADsrc%E5%BC%95%E7%94%A8%E8%B5%8B%E5%80%BC%E9%97%AE%E9%A2%98/</loc>
     
     <lastmod>2017-08-25T14:15:39.501Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://samanthalu.site/tags/index.html</loc>
-    
-    <lastmod>2017-08-08T02:41:57.009Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://samanthalu.site/about/index.html</loc>
+    <loc>http://samanthalu.site/about/index.html</loc>
     
     <lastmod>2017-08-08T02:41:46.088Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://samanthalu.site/demos/index.html</loc>
+    <loc>http://samanthalu.site/demos/index.html</loc>
     
     <lastmod>2017-08-08T01:56:34.734Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://samanthalu.site/demos/2048-%E8%83%A1%E6%AD%8C/index.html</loc>
+    <loc>http://samanthalu.site/demos/2048-%E8%83%A1%E6%AD%8C/index.html</loc>
     
     <lastmod>2017-04-20T09:43:22.169Z</lastmod>
     
