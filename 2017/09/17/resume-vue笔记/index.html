@@ -24,14 +24,18 @@
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="">
-    <meta property="og:type" content="article">
+    <meta name="keywords" content="vue">
+    <meta name="description" content="Vue transition-group 用v-for循环将五个基础组件都加入DOM，而非用is决定动态组件，减少不必要的渲染。 transition名字由滑动方向决定：name = slide-up/slide-down。 加入animate.css，用enter-active-class等，赋值应为字符串，不能为表达式。限制翻页用leave钩子在上页离开动画结束时阻止翻页。12345678">
+<meta name="keywords" content="vue">
+<meta property="og:type" content="article">
 <meta property="og:title" content="resume-vue笔记">
 <meta property="og:url" content="http://samanthalu.site/2017/09/17/resume-vue笔记/index.html">
 <meta property="og:site_name" content="Samantha&#39;s Blog">
-<meta property="og:updated_time" content="2017-09-17T11:27:06.074Z">
+<meta property="og:description" content="Vue transition-group 用v-for循环将五个基础组件都加入DOM，而非用is决定动态组件，减少不必要的渲染。 transition名字由滑动方向决定：name = slide-up/slide-down。 加入animate.css，用enter-active-class等，赋值应为字符串，不能为表达式。限制翻页用leave钩子在上页离开动画结束时阻止翻页。12345678">
+<meta property="og:updated_time" content="2017-09-18T09:31:33.300Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="resume-vue笔记">
+<meta name="twitter:description" content="Vue transition-group 用v-for循环将五个基础组件都加入DOM，而非用is决定动态组件，减少不必要的渲染。 transition名字由滑动方向决定：name = slide-up/slide-down。 加入animate.css，用enter-active-class等，赋值应为字符串，不能为表达式。限制翻页用leave钩子在上页离开动画结束时阻止翻页。12345678">
     
         <link rel="alternate" type="application/atom+xml" title="Samantha&#39;s Blog" href="/atom.xml">
     
@@ -156,6 +160,8 @@
 </time>
 
 
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/项目笔记/">项目笔记</a></li></ul>
+
             
         </h5>
     </div>
@@ -168,6 +174,13 @@
 
 <div class="container body-wrap">
     
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Vue-transition-group"><span class="post-toc-number">1.</span> <span class="post-toc-text">Vue transition-group</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#限制翻页"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">限制翻页</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#入场动画"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">入场动画</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#一次事件监听函数"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">一次事件监听函数</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#滚轮事件"><span class="post-toc-number">2.</span> <span class="post-toc-text">滚轮事件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#节流函数"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">节流函数</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#图片加载、打包问题"><span class="post-toc-number">3.</span> <span class="post-toc-text">图片加载、打包问题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#加载"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">加载</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#用js给伪元素添加样式"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">用js给伪元素添加样式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#出现dist-static-css-static"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">出现dist/static/css/static/...</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
 <article id="post-resume-vue笔记"
   class="post-article article-type-post fade" itemprop="blogPost">
 
@@ -177,6 +190,8 @@
             <time class="post-time" title="2017-09-17 19:27:06" datetime="2017-09-17T11:27:06.000Z"  itemprop="datePublished">2017-09-17</time>
 
             
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/项目笔记/">项目笔记</a></li></ul>
+
 
 
             
@@ -187,7 +202,21 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"> </script><script src="/assets/js/APlayer.min.js"> </script>
+            <script src="/assets/js/APlayer.min.js"> </script><link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"> </script><h2 id="Vue-transition-group"><a href="#Vue-transition-group" class="headerlink" title="Vue transition-group"></a>Vue transition-group</h2><ul>
+<li>用v-for循环将五个基础组件都加入DOM，而非用is决定动态组件，减少不必要的渲染。</li>
+<li>transition名字由滑动方向决定：name = slide-up/slide-down。</li>
+<li>加入animate.css，用enter-active-class等，赋值应为字符串，不能为表达式。<h3 id="限制翻页"><a href="#限制翻页" class="headerlink" title="限制翻页"></a>限制翻页</h3>用leave钩子在上页离开动画结束时阻止翻页。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">// transition-group中@leave=&quot;slidingHandler&quot;</div><div class="line">slidingHandler (el, done) &#123;</div><div class="line">  oneTime(el, &apos;animationend&apos;, () =&gt; &#123;</div><div class="line">    // sliding为true时才能进入滚动函数</div><div class="line">    this.sliding = false</div><div class="line">    done()</div><div class="line">  &#125;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="入场动画"><a href="#入场动画" class="headerlink" title="入场动画"></a>入场动画</h3><p>用after-enter钩子emit每个组件的enterAnimate函数，函数中设showMe为true，触发animate.css入场动画。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">// transition-group中@after-enter=&quot;enterHandler&quot;</div><div class="line">enterHandler () &#123;   </div><div class="line">  // 每页的showMe为true执行动画</div><div class="line">  this.$refs.component[this.curIndex].enterAnimate()</div><div class="line">&#125;,</div></pre></td></tr></table></figure></p>
+<h3 id="一次事件监听函数"><a href="#一次事件监听函数" class="headerlink" title="一次事件监听函数"></a>一次事件监听函数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">const oneTime = function (node, type, callback) &#123;</div><div class="line">  node.addEventListener(type, handler)</div><div class="line">  function handler (e) &#123;</div><div class="line">    e.target.removeEventListener(e.type, handler)</div><div class="line">    return callback(e)</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="滚轮事件"><a href="#滚轮事件" class="headerlink" title="滚轮事件"></a>滚轮事件</h2><p>mousewheel事件中，event.wheelDelta<0 为向下滚动；="" firefox的dommousescroll事件中，event.detail="">0 为向下滚动。</0></p>
+<h3 id="节流函数"><a href="#节流函数" class="headerlink" title="节流函数"></a>节流函数</h3><p>监听滚轮事件的handle函数，执行需经过节流。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">/*delay为fn执行时间间隔，mustRunDelay为必须执行的时间间隔，即该时间内必须至少执行一次。</div><div class="line">*/</div><div class="line">const _throttleV2 = function (fn, delay, mustRunDelay) &#123;</div><div class="line">  let timer = null</div><div class="line">  let tStart</div><div class="line">  return (...params) =&gt; &#123;</div><div class="line">    let tCurr = +new Date()</div><div class="line">    clearTimeout(timer)</div><div class="line">    if (!tStart) &#123;</div><div class="line">      tStart = tCurr</div><div class="line">    &#125;</div><div class="line">    if (tCurr - tStart &gt;= mustRunDelay) &#123;</div><div class="line">      fn.apply(this, params)</div><div class="line">      tStart = tCurr</div><div class="line">    &#125; else &#123;</div><div class="line">      timer = setTimeout(function () &#123;</div><div class="line">        fn.apply(this, params)</div><div class="line">      &#125;, delay)</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="图片加载、打包问题"><a href="#图片加载、打包问题" class="headerlink" title="图片加载、打包问题"></a>图片加载、打包问题</h2><h3 id="加载"><a href="#加载" class="headerlink" title="加载"></a>加载</h3><p>在data中，<code>img: require(path/to/your/source)</code>,可使图片数据与代码分离。</p>
+<h3 id="用js给伪元素添加样式"><a href="#用js给伪元素添加样式" class="headerlink" title="用js给伪元素添加样式"></a>用js给伪元素添加样式</h3><p><code>document.styleSheets[0].insertRule(&#39;&lt;label&gt;:after {...}&#39;, 0)</code></p>
+<h3 id="出现dist-static-css-static"><a href="#出现dist-static-css-static" class="headerlink" title="出现dist/static/css/static/..."></a>出现<code>dist/static/css/static/...</code></h3><p>打包时出现图片无法显示的问题，发现图片路径中出现<code>dist/static/css/static/...</code>，这说明路径指向了更深层。<br>若图片都出现这样的问题，则在build/webpack.base.conf.js中：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">  test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,</div><div class="line">  loader: &apos;url-loader&apos;,</div><div class="line">  options: &#123;</div><div class="line">    limit: 10000,</div><div class="line">    name: utils.assetsPath(&apos;img/[name].[hash:7].[ext]&apos;)</div><div class="line">+   pubicPath: &apos;../../&apos;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>若只有个别图片出现问题（如该项目中给伪元素加样式出现图片路径问题），直接在路径前加<code>../../</code>：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">// template</div><div class="line">&lt;div :style=&quot;&#123;backgroundImage: &apos;url(../../&apos; + img + &apos;)&apos;&#125;&quot;&gt;&lt;/div&gt;</div><div class="line">// scripts</div><div class="line">data () &#123;</div><div class="line">  return &#123;</div><div class="line">    img: require(&apos;path/to/your/source&apos;)</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+
         </div>
 
         <blockquote class="post-copyright">
@@ -215,6 +244,8 @@
 
         <div class="post-footer">
             
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
+
 
             
 <div class="page-share-wrap">

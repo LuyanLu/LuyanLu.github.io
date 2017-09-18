@@ -172,6 +172,8 @@
         <time class="post-time" title="2017-09-17 19:27:06" datetime="2017-09-17T11:27:06.000Z"  itemprop="datePublished">2017-09-17</time>
 
         
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/项目笔记/">项目笔记</a></li></ul>
+
 
 
     </div>
@@ -191,12 +193,21 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-          
+          Vue transition-group
+用v-for循环将五个基础组件都加入DOM，而非用is决定动态组件，减少不必要的渲染。
+transition名字由滑动方向决定：name = slide-up/slide-down。
+加入animate.css，用enter-active-class等，赋值应为字符串，不能为表达式。限制翻页用leave钩子在上页离开动画结束时阻止翻页。12345...
     
 
         <a href="/2017/09/17/resume-vue笔记/" class="post-more waves-effect waves-button">
             Continue reading...
         </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
+
     </div>
     
 </article>
