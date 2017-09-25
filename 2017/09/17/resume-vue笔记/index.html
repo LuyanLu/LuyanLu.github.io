@@ -202,7 +202,7 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <script src="/assets/js/APlayer.min.js"> </script><link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"> </script><h2 id="Vue-transition-group"><a href="#Vue-transition-group" class="headerlink" title="Vue transition-group"></a>Vue transition-group</h2><ul>
+            <link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"> </script><script src="/assets/js/APlayer.min.js"> </script><h2 id="Vue-transition-group"><a href="#Vue-transition-group" class="headerlink" title="Vue transition-group"></a>Vue transition-group</h2><ul>
 <li>用v-for循环将五个基础组件都加入DOM，而非用is决定动态组件，减少不必要的渲染。</li>
 <li>transition名字由滑动方向决定：name = slide-up/slide-down。</li>
 <li>加入animate.css，用enter-active-class等，赋值应为字符串，不能为表达式。<h3 id="限制翻页"><a href="#限制翻页" class="headerlink" title="限制翻页"></a>限制翻页</h3>用leave钩子在上页离开动画结束时阻止翻页。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">// transition-group中@leave=&quot;slidingHandler&quot;</div><div class="line">slidingHandler (el, done) &#123;</div><div class="line">  oneTime(el, &apos;animationend&apos;, () =&gt; &#123;</div><div class="line">    // sliding为true时才能进入滚动函数</div><div class="line">    this.sliding = false</div><div class="line">    done()</div><div class="line">  &#125;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
@@ -299,7 +299,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/09/25/cookie和session/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">cookie和session</h4>
+      </a>
+    </div>
   
 
   
