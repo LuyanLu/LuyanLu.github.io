@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+<!-- Baidu Tongji -->
+<script>var _hmt = _hmt || []</script>
+<script async src="//hm.baidu.com/hm.js?6e119ce61cea276445bd1b9b85dd8522"></script>
+<!-- End Baidu Tongji -->
+
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>JS算法 - 排序 | Samantha&#39;s Blog | 云在青天水在瓶</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="javascript 算法 排序">
+    <meta name="description" content="冒泡排序12345678910111213141516// 冒泡排序 每次将最小元素推至最前function sort4(array) &amp;#123;  var len = array.length,  i, j, tmp, result;  result = array.slice(0);  for (i = 0; i &amp;lt; len; i++) &amp;#123;    for (j = len">
+<meta name="keywords" content="javascript 算法 排序">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS算法 - 排序">
+<meta property="og:url" content="http://samanthalu.site/2017/09/27/JS算法-排序/index.html">
+<meta property="og:site_name" content="Samantha&#39;s Blog">
+<meta property="og:description" content="冒泡排序12345678910111213141516// 冒泡排序 每次将最小元素推至最前function sort4(array) &amp;#123;  var len = array.length,  i, j, tmp, result;  result = array.slice(0);  for (i = 0; i &amp;lt; len; i++) &amp;#123;    for (j = len">
+<meta property="og:updated_time" content="2017-09-27T02:37:58.075Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JS算法 - 排序">
+<meta name="twitter:description" content="冒泡排序12345678910111213141516// 冒泡排序 每次将最小元素推至最前function sort4(array) &amp;#123;  var len = array.length,  i, j, tmp, result;  result = array.slice(0);  for (i = 0; i &amp;lt; len; i++) &amp;#123;    for (j = len">
+    
+        <link rel="alternate" type="application/atom+xml" title="Samantha&#39;s Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Samantha Lu</h5>
+          <a href="mailto:samanthalu920@qq.com" title="samanthalu920@qq.com" class="mail">samanthalu920@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                Home
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/LuyanLu" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://samanthalu.site/resume" target="_blank" >
+                <i class="icon icon-lg icon-smile-o"></i>
+                About Me
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=6ZqIhIiHnYGIhZzQ29mpmJjHioaE" target="_blank" >
+                <i class="icon icon-lg icon-envelope-o"></i>
+                Contact Me
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">JS算法 - 排序</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">JS算法 - 排序</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-09-27T02:32:38.000Z" itemprop="datePublished" class="page-time">
+  2017-09-27
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/干货/">干货</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#冒泡排序"><span class="post-toc-number">1.</span> <span class="post-toc-text">冒泡排序</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#选择排序"><span class="post-toc-number">2.</span> <span class="post-toc-text">选择排序</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#快速排序"><span class="post-toc-number">3.</span> <span class="post-toc-text">快速排序</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#插入排序"><span class="post-toc-number">4.</span> <span class="post-toc-text">插入排序</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#希尔排序"><span class="post-toc-number">5.</span> <span class="post-toc-text">希尔排序</span></a></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-JS算法-排序"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">JS算法 - 排序</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-09-27 10:32:38" datetime="2017-09-27T02:32:38.000Z"  itemprop="datePublished">2017-09-27</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/干货/">干货</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"> </script><script src="/assets/js/APlayer.min.js"> </script><h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">// 冒泡排序 每次将最小元素推至最前</div><div class="line">function sort4(array) &#123;</div><div class="line">  var len = array.length,</div><div class="line">  i, j, tmp, result;</div><div class="line">  result = array.slice(0);</div><div class="line">  for (i = 0; i &lt; len; i++) &#123;</div><div class="line">    for (j = len - 1; j &gt; i; j--) &#123;</div><div class="line">      if (result[j] &lt; result[j - 1]) &#123;</div><div class="line">        tmp = result[j - 1];</div><div class="line">        result[j - 1] = result[j];</div><div class="line">        result[j] = tmp;</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">  return result;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>改进冒泡排序<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">// 如果在某次的排序中没有出现交换的情况，</div><div class="line">// 那么说明在无序的元素现在已经是有序了，就可以直接返回了。</div><div class="line">function sort5(array) &#123;</div><div class="line">  var len = array.length,</div><div class="line">  i, j, tmp, exchange, result;</div><div class="line"></div><div class="line">  result = array.slice(0);</div><div class="line">  for (i = 0; i &lt; len; i++) &#123;</div><div class="line">    exchange = 0;</div><div class="line">    for (j = len - 1; j &gt; i; j--) &#123;</div><div class="line">      if (result[j] &lt; result[j - 1]) &#123;</div><div class="line">        tmp = result[j];</div><div class="line">        result[j] = result[j - 1];</div><div class="line">        result[j - 1] = tmp;</div><div class="line">        exchange = 1;</div><div class="line">      &#125;</div><div class="line">    &#125;</div><div class="line">    if (!exchange) return result;</div><div class="line">  &#125;</div><div class="line">  return result;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">// 在无序区中选出最小的元素，然后将它和无序区的第一个元素交换位置。</div><div class="line">// 原理跟冒泡排序一样，算是冒泡的衍生版本</div><div class="line">function sort7(array) &#123;</div><div class="line">  var len = array.length,</div><div class="line">  i, j, k, tmp, result;</div><div class="line"></div><div class="line">  result = array.slice(0);</div><div class="line">  for (i = 0; i &lt; len; i++) &#123;</div><div class="line">    k = i;</div><div class="line">    for (j = i + 1; j &lt; len; j++) &#123;</div><div class="line">      if (result[j] &lt; result[k]) k = j;</div><div class="line">    &#125;</div><div class="line">    if (k != i) &#123;</div><div class="line">      tmp = result[k];</div><div class="line">      result[k] = result[i];</div><div class="line">      result[i] = tmp;</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">  return result;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2><p>在JS中相对较快<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">//（1）在数据集之中，选择一个元素作为&quot;基准&quot;（pivot）。</div><div class="line">//（2）所有小于&quot;基准&quot;的元素，都移到&quot;基准&quot;的左边；所有大于&quot;基准&quot;的元素，都移到&quot;基准&quot;的右边。</div><div class="line">//（3）对&quot;基准&quot;左边和右边的两个子集，不断重复第一步和第二步，直到所有子集只剩下一个元素为止。</div><div class="line">function sort6(array) &#123;</div><div class="line">  var tmp_array = array.slice(0), result,</div><div class="line">  quickSort = function(arr) &#123;</div><div class="line">  if (arr.length &lt;= 1) &#123; return arr; &#125;</div><div class="line">  var pivotIndex = Math.floor(arr.length / 2);</div><div class="line">  var pivot = arr.splice(pivotIndex, 1)[0];</div><div class="line">  var left = [];</div><div class="line">  var right = [];</div><div class="line">  for (var i = 0; i &lt; arr.length; i++)&#123;</div><div class="line">    if (arr[i] &lt; pivot) &#123;</div><div class="line">      left.push(arr[i]);</div><div class="line">    &#125; else &#123;</div><div class="line">      right.push(arr[i]);</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">  return quickSort(left).concat([pivot], quickSort(right));</div><div class="line">  &#125;;</div><div class="line">  result = quickSort(tmp_array);</div><div class="line">  return result;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">// 插入排序 从下标1开始每增1项排序一次，越往后遍历次数越多</div><div class="line">function sort1(array) &#123;</div><div class="line">  var len = array.length,</div><div class="line">      i, j, tmp, result;</div><div class="line">  </div><div class="line">  // 设置数组副本</div><div class="line">  result = array.slice(0);</div><div class="line">  for(i=1; i &lt; len; i++)&#123;</div><div class="line">    tmp = result[i];</div><div class="line">    j = i - 1;</div><div class="line">    while(j&gt;=0 &amp;&amp; tmp &lt; result[j])&#123;</div><div class="line">      result[j+1] = result[j];</div><div class="line">      j--;</div><div class="line">    &#125;</div><div class="line">    result[j+1] = tmp;</div><div class="line">  &#125;</div><div class="line">  return result;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>改进：二分插入排序<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">// 先在有序区通过二分查找的方法找到移动元素的起始位置，</div><div class="line">// 然后通过这个起始位置将后面所有的元素后移</div><div class="line">function sort2(array) &#123;</div><div class="line">  var len = array.length,</div><div class="line">      i, j, tmp, low, high, mid, result;</div><div class="line">  // 赋予数组副本</div><div class="line">  result = array.slice(0);</div><div class="line">  for(i = 1; i &lt; len; i++)&#123;</div><div class="line">    tmp = result[i];</div><div class="line">    low = 0;</div><div class="line">    high = i - 1;</div><div class="line">    while(low &lt;= high)&#123;</div><div class="line">      mid = parseInt((low + high)/2, 10);</div><div class="line">      if(tmp &lt; result[mid]) high = mid - 1;</div><div class="line">      else low = mid + 1;</div><div class="line">    &#125;</div><div class="line">    for(j = i - 1; j &gt;= high+1; j--)&#123;</div><div class="line">      result[j+1] = result[j];            </div><div class="line">    &#125;</div><div class="line">    result[j+1] = tmp;</div><div class="line">  &#125;</div><div class="line">  return result;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">// 希尔排序：先取合适gap将整个待排序记录序列分割成若干个子序列</div><div class="line">// 在序列内分别进行直接插入排序，待整个序列基本有序时，</div><div class="line">// 再对全体记录进行一次直接插入排序</div><div class="line">function sort3(array)&#123;</div><div class="line">  var len = array.length, gap = parseInt(len/2), </div><div class="line">      i, j, tmp, result;</div><div class="line">  // 复制数组</div><div class="line">  result = array.slice(0);</div><div class="line">  while(gap &gt; 0)&#123;</div><div class="line">    for(i = gap; i &lt; len; i++)&#123;</div><div class="line">      tmp = result[i];</div><div class="line">      j = i - gap;</div><div class="line">      while(j&gt;=0 &amp;&amp; tmp &lt; result[j])&#123;</div><div class="line">        result[j + gap] = result[j];</div><div class="line">        j = j - gap;</div><div class="line">      &#125;</div><div class="line">      result[j + gap] = tmp;</div><div class="line">    &#125;</div><div class="line">    gap = parseInt(gap/2);</div><div class="line">  &#125;</div><div class="line">  return result;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>动态定义间隔序列<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">while(gap &lt; len/5) &#123; //动态定义间隔序列 </div><div class="line">    gap =gap*5+1; </div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>mark: <a href="https://juejin.im/post/57dcd394a22b9d00610c5ec8" target="_blank" rel="external">十大经典排序算法总结（JavaScript描述）</a></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+
+        
+        Sans toi, les émotions d'aujourd'hui ne seraient que la peau morte des émotions d'autrefois.
+        
+    </div>
+    <footer>
+        <a href="http://samanthalu.site">
+            <img src="/img/avatar.jpg" alt="Samantha Lu">
+            Samantha Lu
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/javascript-算法-排序/">javascript 算法 排序</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://samanthalu.site/2017/09/27/JS算法-排序/&title=《JS算法 - 排序》 — Samantha's Blog&pic=http://samanthalu.site/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://samanthalu.site/2017/09/27/JS算法-排序/&title=《JS算法 - 排序》 — Samantha's Blog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://samanthalu.site/2017/09/27/JS算法-排序/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《JS算法 - 排序》 — Samantha's Blog&url=http://samanthalu.site/2017/09/27/JS算法-排序/&via=http://samanthalu.site" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://samanthalu.site/2017/09/27/JS算法-排序/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/09/25/cookie和session/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">cookie和session</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢金主大大~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Samantha Lu &copy; 2017</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://samanthalu.site/2017/09/27/JS算法-排序/&title=《JS算法 - 排序》 — Samantha's Blog&pic=http://samanthalu.site/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://samanthalu.site/2017/09/27/JS算法-排序/&title=《JS算法 - 排序》 — Samantha's Blog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://samanthalu.site/2017/09/27/JS算法-排序/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《JS算法 - 排序》 — Samantha's Blog&url=http://samanthalu.site/2017/09/27/JS算法-排序/&via=http://samanthalu.site" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://samanthalu.site/2017/09/27/JS算法-排序/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACLklEQVR42u3aS27DMAwFwN7/0u62i9h5JNsCoUYrA7UTTQrQ/OjrK17XzUruz+9JnhotDAyMj2Vcj6vH+PlU8gnP19G3Y2BgHMBINvF83ftrznuzZwwMDIxgc8+fc3dPHnwxMDAwqoznbSVlai+gY2BgnMzopWhJ2M3Z/1SLY2BgfCAj77r///WfzDcwMDA+inEVVx4oe6H8ai0MDIzdjF7a12uQTQrjKA3FwMBYykiK1bzd3ys4eyOHF/8HDAyMAxj5sYm83T8fMER7wMDAOIBRTQEnX1kdP0StNwwMjAMY8wZ9r1XXq7lfXGNgYKxmVFO0ebGaH63IXxIYGBi7GUlpOj/zUD1m8Yy5fW9gYGAsZeTts2Q8MA+jvbEEBgbGbsYkyPZ4kxSwHGoxMDBWMCZt/Xy0kITOXtjFwMA4gdFLB3sjhGoIbh62wMDAWM3oJYu98WSvGXf7vRgYGAcwqm213xoYVJPI251gYGCsZlSrwmqamIwcJj9H9AAGBsYKRlJAThpq1ZHk8+c3D1tgYGCsY+QjgUJTrBhGn8NrFHAxMDDWMeattF6qN3n2Te8QAwNjBeMqrio1D5rVUN7s52FgYHwgY97cr+Zmc16edGJgYGxiVMeK+cGIZLv5U9HAEgMDYzWjOpicFL2TN8CbPBcDAwMj6N4lmMmP8msBFwMDYzUjCZfzw6l5GYyBgXEOY3Qkq5VKVjEYGBgnM+YHI/KRZ3XMWU1DMTAw1jG+AZE9k2EIZCqmAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = 'Missing you~';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '云在青天水在瓶';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
